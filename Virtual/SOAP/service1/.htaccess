@@ -1,0 +1,13 @@
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]
+
+
+RewriteRule ^compare/([^/]+)/([^/]+)/([^/]+)$ client.php?long=$1&larg=$2&hauteur=$3 [L]
+
+
+
+
+
+

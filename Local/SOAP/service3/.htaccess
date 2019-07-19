@@ -1,0 +1,9 @@
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]
+
+
+RewriteRule ^volume/([^/]+)/([^/]+)/([^/]+)/([^/]+)$ client.php?type=$1&long=$2&larg=3&hauteur=$4 [L]
+
+
